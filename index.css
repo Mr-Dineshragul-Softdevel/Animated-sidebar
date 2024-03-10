@@ -68,3 +68,30 @@ body{
     color: #Ea2027;
     background-color: azure;
 }
+.links{
+    transform: translateX(-250px);
+    transition: 0.5s;
+}
+.content{
+    padding: 10px;
+}
+.open .links{
+    transform: translateX(0px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.nav-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3;
+}
+.open .nav-overlay{
+    visibility: visible;
+    opacity: 1;
+}
