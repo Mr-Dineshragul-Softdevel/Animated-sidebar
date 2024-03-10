@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         sideNav.classList.add('open');
     })
 
-    btnNav.addEventListener('click',()=>{
-        sideNav.classList.add('open');
+    overlayScreen.addEventListener('click',()=>{
+        sideNav.classList.remove('open');
     })
 })
